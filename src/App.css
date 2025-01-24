@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+
+font-family: Josefin Sans;
+background-color: #161722;
+  
+}
+.DarkMode ,.LightMode{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+ .Image,.ImageLight{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  width: 100%;
+  height: 14em;
+  font-size: 400;
+animation:  imageOpacity .25s ease-in;
+
+
+}
+
+
+.content,.contentLight  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1em;
+}
+
+
+
+.content img{
+  
+  height: 2em;
+  width: 2em;
+}
+
+.ToDOImg{
+display: flex;
+flex-direction:row;
+  gap:20em; 
+  color: white;
+  
+}
+
+.ToDOImg h1{
+
+  letter-spacing:.3em ;
+}
+.ToDOImg img{
+  cursor: pointer;
+}
+
+input{
+
+  width: 100%;
+  height: 3em;
+  background-color:#25273C ;
+  border: none;
+  padding: .5em;
+  padding-left:1em ;
+  border-radius: .3em;
+  color: rgb(169, 169, 169);
+  
+}
+
+.LightMode input{
+
+  width: 100%;
+  height: 3em;
+  background-color:rgb(255, 255, 255) ;
+  border: none;
+  padding: .5em;
+  padding-left:1em ;
+  border-radius: .3em;
+  color: rgb(116, 116, 116);
+  
+}
+
+.plus{
+
+  color: white;
+  position: absolute;
+top: 70%;
+left:95%;
+cursor: pointer;
+}
+.plusLight{
+  color: black;
+  position: absolute;
+top: 70%;
+left:95%;
+cursor: pointer;
+  
+}
+
+.ToDOImg{
+display: flex;
+flex-direction:row;
+  gap:20em; 
+  color: white;
+  
+}
+
+.ToDOImg h1{
+
+  letter-spacing:.3em ;
+}
+.ToDOImg img{
+  cursor: pointer;
+}
+
+.ItemsComplete{
+
+  display: flex;
+  flex-direction: row;
+  background-color: #25273C;
+  color: rgba(113, 113, 113, 0.732);
+align-items: center;
+justify-content: space-between;
+width: 32em;
+height: 3em;
+gap: 2em;
+padding: .3em;
+
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: .4em;
+margin-bottom: 2em;
+}
+
+
+/* Animation */
+
+
+@keyframes imageOpacity{
+  from{
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+
+/**msc*/
+
+.active {
+
+  color: blue;
+}
+
+.Circle{
+
+  border: 1px solid rgb(201, 201, 201);
+  display: flex;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 90em;
+}
+.Todo-List{
+
+  display: flex;
+  flex-direction: row;
+  background-color: #25273C;
+  color: rgba(113, 113, 113, 0.732);
+align-items: center;
+justify-content: space-between;
+width: 32em;
+height: 3em;
+gap: 2em;
+padding: .3em;
+
+border-bottom: 1px solid rgba(137, 137, 137, 0.512);
+}
+
+/*  all.jsx*/
+
+#span{
+
+border: 1px solid rgb(208, 208, 208);
+height: 20px;
+width: 20px;
+margin-left: 1em;
+margin-top: .5em;
+
+border-radius: 50%;
+display: inline-block;
+}
+.AllDiv li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+
+  width: 32.3em;
+  height: 3em;
+  border-bottom: 1px solid rgb(126, 126, 126);
+justify-content: center;
+color: rgb(155, 155, 155);
+}
+
+.List{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+gap: .5em;
+  
+}
+
+.List span{
+
+  cursor: pointer;
+}
+.List p{
+  margin-top: .7em;
+}
+
+#React{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10em;
+  color: rgb(120, 120, 120);
+}
